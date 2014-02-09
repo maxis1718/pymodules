@@ -1,0 +1,7 @@
+venv
+*.pyc
+*.db3
+*.txt
+*.json
+*.pkl
+*.db
