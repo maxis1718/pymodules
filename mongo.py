@@ -46,7 +46,7 @@ def transform(src, det, server_addr='ironman.nlpweb.org'):
 
 def create_index(collection, columns):
 	for index_columns in [ dict([(x, 1) for x in key]) for key in columns]:
-		print 'creating', ' + '.join(map(lambda x:str(x), index_columns.keys()]))
+		print 'creating', ' + '.join(map(lambda x:str(x), index_columns.keys()))
 		collection.ensureIndex( index_columns )
 
 if __name__ == '__main__':
