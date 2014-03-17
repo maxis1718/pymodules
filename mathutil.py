@@ -8,3 +8,6 @@ def standard_deviation(X):
 	N = float(len(X))
 	miu = float(sum(X))/N
 	return math.sqrt(sum([(x-miu)**2 for x in X])/N)
+
+def geomatric_mean(X):
+	return reduce(lambda x,y:x*y, X)**(1/float(len(a)))
