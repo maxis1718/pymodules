@@ -10,11 +10,20 @@ def normalize(v):
 def avg(v):
 	return sum(v)/float(len(v))	
 
-def standard_deviation(v, normalized=False):
+def variance(v, normalized=False):
 	v = normalize(v) if normalized else v
 	N = float(len(v))
 	miu = float(sum(v))/N
-	return math.sqrt(sum([(x-miu)**2 for x in v])/N)
+	return sum([(x-miu)**2 for x in v])/N
+
+def standard_deviation(v, normalized=False):
+	return math.sqrt(variance(v, normalized))
+	# v = normalize(v) if normalized else v
+	# N = float(len(v))
+	# miu = float(sum(v))/N
+	# return math.sqrt(sum([(x-miu)**2 for x in v])/N)
+
+
 
 def geomatric_mean(v):
 	return reduce(lambda x,y:x*y, v)**(1/float(len(a)))
