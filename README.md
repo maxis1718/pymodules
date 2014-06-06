@@ -2,7 +2,7 @@ pymodules
 =========
 
 * [color](https://github.com/maxis1718/pymodules/blob/master/README.md#color) - render strings
-* [ListCombination](https://github.com/maxis1718/pymodules/blob/master/README.md#ListCombination) - python Combination in list type
+* [ListCombination](https://github.com/maxis1718/pymodules/blob/master/README.md#listcombination) - python Combination in list type
 * [mathutil](https://github.com/maxis1718/pymodules/blob/master/README.md#mathutil) - often used math function
 
 color
