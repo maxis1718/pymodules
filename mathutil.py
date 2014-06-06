@@ -23,10 +23,22 @@ def standard_deviation(v, normalized=False):
 	# miu = float(sum(v))/N
 	# return math.sqrt(sum([(x-miu)**2 for x in v])/N)
 
-
-
 def geomatric_mean(v):
-	return reduce(lambda x,y:x*y, v)**(1/float(len(a)))
+	return reduce(lambda x,y:x*y, v)**(1/float(len(v)))
 
 def arithmetic_mean(v):
 	return avg(v)
+
+if __name__ == '__main__':
+
+	seq = [1,1,1,4,10,4,1,2,1]
+
+	print 'intput sequence:',seq
+	print '='*50
+	print 'normalized data is', normalize(seq)
+	print 'avg is', entropy(seq)
+	print 'entropy is', entropy(seq)
+	print 'variance is', variance(seq)
+	print 'standard_deviation is', standard_deviation(seq)
+	print 'geomatric_mean is',geomatric_mean(seq)
+	print 'arithmetic_mean is',arithmetic_mean(seq)
