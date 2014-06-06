@@ -68,10 +68,30 @@ def show():
 		c = '38;05;%d' % i
 		print( render('color '+c, c) )	
 
+def highlight(string): return render(string, 'yellow')
+
 if __name__ == '__main__':
 	
-	print render('Hello World', 'lg', light=True)
-	show()
+	# highlight text
+	print highlight('Hello World')
+
+	# render color on text using English color name
+	print render('Hello World', 'green')
+
+	# light color support
+	print render('Hello World', 'green', light=True)
+
+	# also can use abbreviation: r for red, g for green, ... etc.
+	print render('Hello World', 'g')
+
+	# auto detec light color (a color name starting with "light")
+	print render('Hello World', 'lightgreen')
+
+	# also abbr.
+	print render('Hello World', 'lg')
+
+	# more geeky, use ANSI code directly
+	print render('Hello World', '1;30')
 
 
 
