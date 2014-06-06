@@ -16,6 +16,11 @@ def ListCombination(list_of_list):
 
 if __name__ == '__main__':
 	# origin: person like bridge
-	pattern = [['PERSON', 'BODY', 'COMMUNICATION'], ['like'], ['ARTIFACT', 'RELATION', 'BODY', 'ACT']]
+	# pattern = [['PERSON', 'BODY', 'COMMUNICATION'], ['like'], ['ARTIFACT', 'RELATION', 'BODY', 'ACT']]
+	pattern = [
+		['I','They'],
+		['love', 'loved', 'loves'],
+		['You']
+	]
 	for single_pat in ListCombination(pattern):
 		print single_pat
